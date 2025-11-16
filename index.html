@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Samsung — Ощути будущее</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+ 
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="navbar"></div>
+
+ 
+  <header class="hero d-flex align-items-center text-white">
+    <div class="overlay-smoke"></div>
+    <div class="container text-center position-relative z-top">
+      <h1 class="display-3 fw-bold mb-3 reveal">Ощути будущее</h1>
+      <p class="lead mb-4 reveal delay-1">Инновации. Дизайн. Технологии, которые делают жизнь лучше.</p>
+      <div class="d-flex justify-content-center gap-3 reveal delay-2">
+        <a href="product.html" class="btn btn-lg btn-light shadow">Посмотреть продукты</a>
+        <a href="about.html" class="btn btn-lg btn-outline-light shadow">Узнать больше</a>
+      </div>
+    </div>
+  </header>
+
+ 
+  <section class="py-5">
+    <div class="container">
+      <h2 class="fw-bold text-center mb-4 reveal">Почему Samsung?</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0 reveal">
+            <div class="card-body text-center">
+              <i class="bi bi-lightning-charge-fill fs-1 text-primary mb-3"></i>
+              <h5 class="card-title">Инновации</h5>
+              <p class="card-text">Создаем технологии, которые двигают мир вперед: смартфоны, телевизоры, бытовая техника и полупроводники.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0 reveal delay-1">
+            <div class="card-body text-center">
+              <i class="bi bi-camera-reels fs-1 text-primary mb-3"></i>
+              <h5 class="card-title">Качество изображений</h5>
+              <p class="card-text">Передовые дисплеи и камеры для тех, кто ценит каждый пиксель.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0 reveal delay-2">
+            <div class="card-body text-center">
+              <i class="bi bi-globe2 fs-1 text-primary mb-3"></i>
+              <h5 class="card-title">Глобальная поддержка</h5>
+              <p class="card-text">Сервис и поддержка на всех континентах — устройства, которым доверяют миллионы.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h3 class="mb-0 reveal">Хиты продаж</h3>
+        <a href="product.html" class="small text-muted">Посмотреть все →</a>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4 reveal">
+          <div class="card product-card shadow-sm">
+            <img loading="lazy" src="./img/smartfony-samsung-28859-02-10-800x500.jpg" class="card-img-top" alt="Galaxy S24 Ultra">
+            <div class="card-body text-center">
+              <h5 class="card-title">Galaxy S24 Ultra</h5>
+              <p class="text-muted small">Камера и производительность премиум-класса.</p>
+              <button class="btn btn-primary btn-sm" data-product='{"title":"Galaxy S24 Ultra","desc":"Флагманский смартфон с камерой Pro-grade и сверхбыстрым процессором.","img":"https://images.samsung.com/is/image/samsung/p6pim/kz_ru/galaxy-s24-ultra/gallery/kz_ru-galaxy-s24-ultra-phantom-black-001-534616.jpg"}' onclick="openQuickView(this)">Быстрый просмотр</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 reveal delay-1">
+          <div class="card product-card shadow-sm">
+            <img loading="lazy" src="./img/i.webp" class="card-img-top" alt="Galaxy Z Fold6">
+            <div class="card-body text-center">
+              <h5 class="card-title">Galaxy Z Fold6</h5>
+              <p class="text-muted small">Складной экран — больше пространства для творчества.</p>
+              <button class="btn btn-primary btn-sm" data-product='{"title":"Galaxy Z Fold6","desc":"Революционный складной дизайн для многозадачности и творчества.","img":"https://images.samsung.com/is/image/samsung/p6pim/kz_ru/galaxy-z-fold6/gallery/kz_ru-galaxy-z-fold6-001-front-534622.jpg"}' onclick="openQuickView(this)">Быстрый просмотр</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 reveal delay-2">
+          <div class="card product-card shadow-sm">
+            <img loading="lazy" src="./img/71dIjM01btL.jpg" class="card-img-top" alt="Neo QLED">
+            <div class="card-body text-center">
+              <h5 class="card-title">Neo QLED TV</h5>
+              <p class="text-muted small">Максимальная яркость и контраст для кинематографа у вас дома.</p>
+              <button class="btn btn-primary btn-sm" data-product='{"title":"Neo QLED TV","desc":"Телевизор с Quantum Matrix и великолепной цветопередачей.","img":"https://images.samsung.com/is/image/samsung/p6pim/ru/neo-qled-gallery/ru-neo-qled-1.jpg"}' onclick="openQuickView(this)">Быстрый просмотр</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <div id="footer"></div>
+
+  <div class="modal fade" id="quickViewModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body p-0">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img id="quickViewImg" src="" alt="" class="img-fluid w-100 h-100 object-cover">
+            </div>
+            <div class="col-md-6 p-4">
+              <h4 id="quickViewTitle"></h4>
+              <p id="quickViewDesc" class="text-muted"></p>
+              <div class="mt-3">
+                <button class="btn btn-primary me-2">Купить</button>
+                <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Закрыть</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="position-fixed bottom-0 end-0 p-3" style="z-index:1200">
+    <div id="actionToast" class="toast align-items-center text-bg-dark border-0" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">Готово</div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Закрыть"></button>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
